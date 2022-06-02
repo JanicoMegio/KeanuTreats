@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/minilogo.JPG" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Keanu Treats</title>
+    <style>
+        body{
+            background-color: black;
+            animation-name: animation-box;
+            animation-duration: 3s;
+        }
+        .container {
+            position: fixed;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background: white;
+            width: 100%;
+            text-align: center;
+            box-shadow: 5px 5px rgb(0, 0, 0, .05);
+        }
+
+        .container a {
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            color: black;
+            font-family: 'Nunito', sans-serif;
+            display: inline-block;
+            border-radius: 50%;
+            transition: 0.4s;
+
+        }
+
+        .container h1 {
+            position: absolute;
+            left: 30px;
+            font-size: 35px;
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Cookie', cursive;
+
+        }
+
+        .container a:hover {
+            color: rgb(94, 94, 94);
+        }
+
+        .contact-form {
+            position: absolute;
+            top: 100px;
+            width: 400px;
+            height: 300px;
+            right: 100px;
+            color: white;
+        }
+        .contact-form>form>h2{
+            font-size: 40px;
+            margin: 30px 0px 10px 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .contact-form>form{
+            position: relative;
+            margin: 5px;
+        }
+        .contact-form>form>input[type=text]{
+            margin: 10px;
+            width: 150px;
+            height: 20px;
+            border: 2px solid white ;
+        }
+        .contact-form >form >textarea {
+            width: 365px;
+            height: 85px;
+            margin: 10px;
+            border: 2px solid white;
+            
+        }
+        .contact-form>form> input[type=submit]{
+            float: right;
+            margin: 10px;
+            background-color: black;
+            color: whitesmoke;
+            padding: 10px;
+            border: 2px solid white;
+        }
+        .contact-form>form> input[type=submit]:hover{
+            background-color: whitesmoke;
+            color: black;
+        }
+        .additional-container{
+            position: absolute;
+            top: 100px;
+            width: 550px;
+            height: 400px;
+            margin: 0px 0px 0px 20px;
+        }
+        .additional-container>.fa{
+            padding: 10px;
+            font-size: 40px;
+            margin: 10px;
+            text-align: center;
+            width: 30px;
+            border-radius: 100%;
+            text-decoration: none;
+        }
+        .additional-container>.fa:hover {
+            opacity: 0.7;
+        }
+        .additional-container> .fa-facebook {
+            color: white;
+          }
+        .additional-container> .fa-instagram{
+           
+            color: white;
+        }
+        .additional-container> .fa-twitter{
+            color: white;
+        }
+        .additional-container>p{
+            color: white;
+            font-size: 25px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .additional-container>h1{
+            color: white;
+            font-size: 40px;
+            font-family: 'Open Sans', sans-serif;
+
+        }
+        @keyframes animation-box {
+            0% {
+                opacity: 0;
+            }
+    
+            100% {
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Keanu Treats</h1>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Product</a>
+        <a href="about.html">About Us</a>
+    </div>
+    <div class="contact-form">
+        <form>
+            <h2>Contact Us</h2>
+            <input type="text" placeholder="Your Name" target="name">
+            <input type="text" placeholder="Email Address" target="email">
+            <textarea cols="10" rows="6" placeholder="Type Your Message" target="message"></textarea>
+            <input type="submit" target="send">
+        </form>
+    </div>
+    <div class="additional-container">
+        <h1>Quisao, Pililla<br>Rizal, Philippines</h1>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <p>
+            We deliver within Pililla every Tuesday, Wednesday, and Thursday from our oven door to your front door,
+            so pre-order now to enjoy it solo or to share!
+        </p>
+        
+    </div>
+</body>
+
+</html>
