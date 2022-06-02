@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/minilogo.JPG" type="image/icon type">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Keanu Treats</title>
+</head>
+<style>
+    body {
+        height: 100%;
+        background-color: black;
+    }
+
+    @keyframes animation-box {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    #about-logo {
+        height: 140px;
+        width: 300px;
+        top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        position: relative;
+        border: 1px solid whitesmoke;
+        animation-name: animation-box;
+        animation-duration: 3s;
+    }
+
+    .text-treats {
+        position: absolute;
+        top: 260px;
+        font-size: large;
+        font-family: 'Raleway', sans-serif;
+        animation-name: animation-box;
+        animation-duration: 3s;
+        color: white;
+    }
+
+    .text-treats>p {
+        text-align: center;
+        padding: 0px 100px 0px 100px;
+    }
+
+    .column {
+        float: left;
+        width: 20%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .column>img {
+        border-radius: 100%;
+        width: 150px;
+        height: 140px;
+        border: 6px solid whitesmoke;
+        box-shadow: 5px 5px rgba(255, 255, 255, 0.05);
+
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .team-container {
+        position: absolute;
+        width: 100%;
+        top: 400px;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .team-container>.row>h1 {
+        font-size: 60px;
+        animation-name: animation-box;
+        animation-duration: 5s;
+        color: whitesmoke;
+    }
+
+    .column>h2,
+    h5 {
+        margin: 3px;
+        color: whitesmoke;
+    }
+
+    .container {
+        position: fixed;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background: white;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px rgb(0, 0, 0, .05);
+        animation-name: animation-box;
+        animation-duration: 3s;
+    }
+
+    .container a {
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        color: black;
+        font-family: 'Nunito', sans-serif;
+        display: inline-block;
+        border-radius: 50%;
+        transition: 0.4s;
+
+    }
+
+    .container h1 {
+        position: absolute;
+        left: 30px;
+        font-size: 35px;
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Cookie', cursive;
+
+    }
+
+    .container a:hover {
+        color: rgb(94, 94, 94);
+    }
+</style>
+
+<body>
+    <div class="all-countainer">
+        <div class="about-container">
+            <img id="about-logo" src="img/logo.jpg" alt="lgo">
+            <div class="text-treats">
+                <p>For more than 25 years, Keanu Treats has been making Filipino's favorite baked goods the
+                    old-fashioned
+                    way:
+                    from scratch, in small batches, and using the finest ingredients. Our assortment includes our
+                    fan-favorite
+                    cakes and cupcakes, world-famous banana bread, and a host of other seasonal treats,
+                    and more.</p>
+            </div>
+        </div>
+        <div class="team-container">
+            <div class="row">
+                <h1>Meet the Team</h1>
+                <div class="column">
+                    <img src="img/keanu.JPG" alt="Snow">
+                    <h2>Keanu</h2>
+                    <h5>Chief Baking Officer</h5>
+                </div>
+                <div class="column">
+                    <img src="img/itim.JPG" alt="Forest">
+                    <h2>Itim</h2>
+                    <h5>Director of Training</h5>
+                </div>
+                <div class="column">
+                    <img src="img/ricky.JPG" alt="Mountains">
+                    <h2>Ricky Boy</h2>
+                    <h5>VP Human Resource</h5>
+                </div>
+                <div class="column">
+                    <img src="img/ayuda.jpg" alt="Mountains">
+                    <h2>Ayuda</h2>
+                    <h5>Production Manager</h5>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Keanu Treats</h1>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Products</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
